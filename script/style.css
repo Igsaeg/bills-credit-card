@@ -92,12 +92,12 @@ input {
 }
 @media screen and (max-width: 480px){
     h1 { font-size: 45px; }
-    #sticky img { height: 50px; }
+    #sticky img { height: 55px; }
     #sticky p { font-size: 29px; }
 }
 @media screen and (max-width: 410px){
     h1 { font-size: 40px; }
-    #sticky img { height: 40px; }
+    #sticky img { height: 45px; }
     #sticky p { font-size: 25px; }
 }
 @media screen and (max-width: 380px){
