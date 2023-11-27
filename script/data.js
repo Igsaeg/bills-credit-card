@@ -140,7 +140,7 @@ const items = [
         price: 20000000
     },
     {
-        name: 'Private island',
+        name: 'Private Island',
         price: 80000000
     },
     {

@@ -80,6 +80,7 @@ input {
     -webkit-appearance: none;
     margin: 0;
 } ::placeholder { color: #333; }
+#last { font-family: 'Metropolis-Medium'; }
 @media screen and (max-width: 818px){
     #sticky img { height: 70px; }
     #sticky p { font-size: 36px; }
