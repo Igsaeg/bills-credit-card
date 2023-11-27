@@ -29,7 +29,7 @@ h1 {
 } #sticky p { font-size: 40px; } 
 #items {
     justify-content: center;
-    margin: 5em 10%;
+    margin: 5em 10% 0 10%;
     flex-wrap: wrap;
     display: flex;
     gap: 5px;
@@ -80,17 +80,28 @@ input {
     -webkit-appearance: none;
     margin: 0;
 } ::placeholder { color: #333; }
+#receipt {
+    flex-direction: column;
+    margin: 2em auto 10em auto;
+    display: flex;
+    width: 25em;
+} #receipt p {
+    text-align: left;
+    font-size: 26px;
+    width: 100%;
+    margin: 0;
+}
 #last { font-family: 'Metropolis-Medium'; }
 @media screen and (max-width: 818px){
     #sticky img { height: 70px; }
     #sticky p { font-size: 36px; }
-    #items { margin: 5em 5%; }
+    #items { margin: 5em 5% 0 5%; }
 }
 @media screen and (max-width: 560px){
     h1 { font-size: 49px; }
-    #sticky img { height: 60px; }
+    #sticky img { height: 62px; }
     #sticky p { font-size: 33px; }
-    #items { margin: 5em 0; }
+    #items {     margin: 5em 0 0 0; }
 }
 @media screen and (max-width: 480px){
     h1 { font-size: 45px; }
@@ -99,7 +110,7 @@ input {
 }
 @media screen and (max-width: 410px){
     h1 { font-size: 40px; }
-    #sticky img { height: 45px; }
+    #sticky img { height: 50px; }
     #sticky p { font-size: 25px; }
 }
 @media screen and (max-width: 380px){

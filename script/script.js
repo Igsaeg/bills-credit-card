@@ -1,4 +1,5 @@
 let money = 117200000000
+let purchased = []
 function add(t, i) {
     const type = [-1, 1];
     let amt = parseFloat(document.getElementById('inp' + i).value) || 0;
@@ -14,10 +15,26 @@ function add(t, i) {
     sell[i].style.color = (amt == 0) ? `#333` : `#F0F0F0`;
     document.getElementById('inp' + i).value = amt;
     document.getElementById('money').innerHTML = `$${money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`
-    const buy = document.getElementsByClassName('buyBtn');
+    const foundIndex = purchased.findIndex(item => item.name === i);
+    (foundIndex !== -1) ? purchased[foundIndex].amount = amt : purchased.push({ name: i, amount: amt });
+    receipt();
     for (let i = 0; i < items.length; i++) {
         document.querySelectorAll('button:nth-child(3)')[i].style.backgroundColor = (items[i].price <= money) ? `#00CE52` : `#F0F0F0`;
     }
+}
+function receipt() {
+    document.getElementById('receipt').innerHTML = '';
+    for (let i = 0; i < purchased.length; i++) {
+        const p = document.createElement('p');
+        if (purchased[i].amount !== 0) {
+            const p = document.createElement('p');
+            p.innerHTML = `${items[purchased[i].name].name} x${purchased[i].amount}`;
+            document.getElementById('receipt').appendChild(p);
+        }
+    }
+    const total = document.createElement('p');
+    total.innerHTML = `Total: <span style="color: red">$${(117200000000 - money).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>`;
+    document.getElementById('receipt').appendChild(total);
 }
 window.onload = function() {
     for (let i = 0; i < items.length; i++) {
