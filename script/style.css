@@ -61,10 +61,11 @@ button {
     font-family: 'Metropolis-Medium';
     padding: 0.8em 1.5em;
     border-radius: 5px;
+    transition: 0.3s;
     font-size: 16px;
     color: #333;
     border: none;
-} button:nth-child(3) { background-color: #AAFCB8; }
+} button:nth-child(3) { background-color: #00CE52;  }
 input {
     font-family: 'Metropolis-Bold';
     pointer-events: none;

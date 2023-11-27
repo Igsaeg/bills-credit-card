@@ -28,16 +28,20 @@ const items = [
         price: 60
     },
     {
-        name: 'Netflix',
-        price: 100
-    },
-    {
         name: 'Shoes',
         price: 125
     },
     {
+        name: 'Year of Netflix',
+        price: 220
+    },
+    {
         name: 'Airpods',
         price: 249
+    },
+    {
+        name: 'Month of Groceries',
+        price: 270
     },
     {
         name: 'PS5',
@@ -52,7 +56,15 @@ const items = [
         price: 840
     },
     {
+        name: 'Scooter',
+        price: 900
+    },
+    {
         name: 'Puppy',
+        price: 1000
+    },
+    {
+        name: 'Kitten',
         price: 1000
     },
     {
@@ -64,8 +76,16 @@ const items = [
         price: 1119
     },
     {
+        name: 'MacBook M3',
+        price: 4299
+    },
+    {
         name: 'Acre of Farmland',
         price: 5050
+    },
+    {
+        name: 'Hot Tub',
+        price: 6000
     },
     {
         name: 'Diamond Ring',
@@ -78,6 +98,10 @@ const items = [
     {
         name: 'Tesla',
         price: 119990
+    },
+    {
+        name: 'Rolls-Royce',
+        price: 400000
     },
     {
         name: 'Family House',
@@ -116,6 +140,10 @@ const items = [
         price: 20000000
     },
     {
+        name: 'Private island',
+        price: 80000000
+    },
+    {
         name: 'Plane',
         price: 350000000
     },
@@ -125,6 +153,6 @@ const items = [
     },
     {
         name: 'Skyscraper',
-        price: 2000000000
+        price: 1000000000
     },
 ]
