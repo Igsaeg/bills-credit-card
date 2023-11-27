@@ -11,7 +11,7 @@ window.onload = function() {
     for (let i = 0; i < items.length; i++) {
         const itemDiv = document.createElement('div');
         itemDiv.innerHTML = `
-            <img src="assets/items/item${i + 1}.png" alt="${items[i].name}" height="120">
+            <img src="assets/items/${items[i].name}.png" alt="${items[i].name}" height="120">
             <p class="name">${items[i].name}</p>
             <p class="price">$${items[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
             <div class="controls">

@@ -32,10 +32,10 @@ h1 {
     margin: 5em 10%;
     flex-wrap: wrap;
     display: flex;
-    gap: 0.6em;
+    gap: 5px;
 } #items .item {
     background-color: #8BD9A8;
-    border: 2px solid #333;
+    border: 3px solid #333;
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
@@ -44,8 +44,8 @@ h1 {
     width: 20em;
 }
 .name {
-    font-size: 26px;
-    margin: 15px 0;
+    font-size: 22px;
+    margin: 15px 0 3px 0;
 }
 .price {
     margin: 0 0 15px 0;
