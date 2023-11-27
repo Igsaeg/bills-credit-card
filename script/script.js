@@ -28,7 +28,7 @@ window.onload = function() {
             <p class="price">$${items[i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
             <div class="controls">
                 <button onclick="add(0, ${i})">Sell</button>
-                <input type="number" id="inp${i}" placeholder="0">
+                <input type="number" id="inp${i}" placeholder="0" tabindex="-1">
                 <button onclick="add(1, ${i})">Buy</button>
             </div>
         `;
