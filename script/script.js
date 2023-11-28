@@ -24,18 +24,28 @@ function add(t, i) {
 }
 function receipt() {
     document.getElementById('receipt').innerHTML = '';
+    let hasItems = false;
     for (let i = 0; i < purchased.length; i++) {
-        const p = document.createElement('p');
         if (purchased[i].amount !== 0) {
             const p = document.createElement('p');
-            p.innerHTML = `${items[purchased[i].name].name} x${purchased[i].amount}`;
+            p.innerHTML = `
+                ${items[purchased[i].name].name}
+                x${purchased[i].amount} 
+                <span style="color: red; font-family: 'Metropolis-Bold';">
+                    $${(items[purchased[i].name].price * purchased[i].amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                </span>
+            `;
             document.getElementById('receipt').appendChild(p);
+            hasItems = true;
         }
     }
-    const total = document.createElement('p');
-    total.innerHTML = `Total: <span style="color: red">$${(117200000000 - money).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>`;
-    document.getElementById('receipt').appendChild(total);
+    if (hasItems) {
+        const total = document.createElement('p');
+        total.innerHTML = `Total: <span style="color: red;">$${(117200000000 - money).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>`;
+        document.getElementById('receipt').appendChild(total);
+    }
 }
+
 window.onload = function() {
     for (let i = 0; i < items.length; i++) {
         const itemDiv = document.createElement('div');

@@ -71,7 +71,6 @@ input {
     pointer-events: none;
     border-radius: 5px;
     text-align: center;
-    user-select: none;
     color: #333;
     border: none;
     width: 5em;
@@ -81,17 +80,22 @@ input {
     margin: 0;
 } ::placeholder { color: #333; }
 #receipt {
+    margin: 2em auto 2em auto;
     flex-direction: column;
-    margin: 2em auto 10em auto;
     display: flex;
     width: 25em;
 } #receipt p {
+    font-family: 'Metropolis-Medium';
+    display: flex;
     text-align: left;
-    font-size: 26px;
-    width: 100%;
+    font-size: 20px;
     margin: 0;
-}
+} #receipt p:last-child {
+    font-family: 'Metropolis-Bold';
+    margin-top: 15px;
+} p span { margin-left: auto; }
 #last { font-family: 'Metropolis-Medium'; }
+
 @media screen and (max-width: 818px){
     #sticky img { height: 70px; }
     #sticky p { font-size: 36px; }
@@ -101,20 +105,24 @@ input {
     h1 { font-size: 49px; }
     #sticky img { height: 62px; }
     #sticky p { font-size: 33px; }
-    #items {     margin: 5em 0 0 0; }
+    #items { margin: 5em 0 0 0; }
 }
 @media screen and (max-width: 480px){
     h1 { font-size: 45px; }
     #sticky img { height: 55px; }
     #sticky p { font-size: 29px; }
+    #receipt { width: 22em; }
 }
 @media screen and (max-width: 410px){
     h1 { font-size: 40px; }
     #sticky img { height: 50px; }
     #sticky p { font-size: 25px; }
+    #receipt { width: 20em; }
+    #receipt p { font-size: 18px; }
 }
 @media screen and (max-width: 380px){
     h1 { font-size: 37px; }
     #sticky p { font-size: 23px; }
     #items .item { width: 19em; }
+    #receipt { width: 18em; }
 }
