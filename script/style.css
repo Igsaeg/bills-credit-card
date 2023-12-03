@@ -72,8 +72,8 @@ input {
     pointer-events: none;
     border-radius: 5px;
     text-align: center;
-    color: #333;
     border: none;
+    color: #333;
     width: 5em;
 } ::-webkit-outer-spin-button,
   ::-webkit-inner-spin-button {
@@ -87,9 +87,9 @@ input {
     width: 25em;
 } #receipt p {
     font-family: 'Metropolis-Medium';
-    display: flex;
     text-align: left;
     font-size: 20px;
+    display: flex;
     margin: 0;
 } #receipt p:last-child {
     font-family: 'Metropolis-Bold';
